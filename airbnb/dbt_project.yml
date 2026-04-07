@@ -35,3 +35,6 @@ models:
 
     dim:
       +materialised: table
+    src:
+      +materialized: ephemeral  # will use CTE no table or view will be created 
+
