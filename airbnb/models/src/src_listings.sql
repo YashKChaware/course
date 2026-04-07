@@ -11,4 +11,4 @@ host_id,
 price as price_str,
 created_at,
 updated_at,
-from raw_listings;
+from raw_listings
