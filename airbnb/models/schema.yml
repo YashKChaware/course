@@ -24,6 +24,11 @@ models:
                         'Shared room',
                         'Hotel room']
 
+     - name: MINIMUM_NIGHTS
+       data_tests:
+        - positive_values
+          
+
   - name: dim_hosts_cleansed
     columns:
 
