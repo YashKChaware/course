@@ -41,3 +41,25 @@ models:
         - accepted_values:
             arguments:
               values: ['t','f']
+
+  - name: fct_reviews
+    columns:
+
+    - name: listing_id
+      data_tests:
+        - relationships:
+             arguments:
+               to: ref('dim_listings_cleansed')
+               field: listing_id
+        - not_null
+
+    - name: review_statment
+      data_tests:
+        - not_null
+        - accepted_values:
+            arguments:
+              values: ['negative', 'positive', 'neutral']
+
+    - name: reviewer_name
+      data_tests:
+        - not_null
