@@ -1,3 +1,3 @@
 {% macro learn_logging() %}
-{{log("Call Your Mom !")}}
+{{log("Call Your Dad !" , info=True)}}
 {% endmacro %}
