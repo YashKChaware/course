@@ -17,4 +17,3 @@ select
     CREATED_AT,
     UPDATED_AT
 from src_hosts
-from src_hosts
