@@ -52,3 +52,6 @@ models:
     src:
       +materialized: ephemeral  # will use CTE no table or view will be created 
 
+vars:
+  user_name: Default username for this project !!
+
