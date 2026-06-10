@@ -11,10 +11,10 @@ with src_hosts as (
 select
     HOST_ID,
     nvl(
-        host_name,'Anonymous'
+        host_name,
+        'N/A'
     ) as host_name,
     IS_SUPERHOST,
     CREATED_AT,
     UPDATED_AT
-from src_hosts
 from src_hosts
