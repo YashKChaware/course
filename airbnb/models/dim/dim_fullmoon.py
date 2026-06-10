@@ -9,6 +9,7 @@ def model(dbt, session):
     dbt.config(
         materialized = "table",
         packages = ["holidays"]
+        enabled=False
     )
 
     orders_df = dbt.ref("seed_full_moon_dates")
